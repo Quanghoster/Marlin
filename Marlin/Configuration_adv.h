@@ -225,8 +225,8 @@
  * Multiple extruders can be assigned to the same pin in which case
  * the fan will turn on when any selected extruder is above the threshold.
  */
-#define E0_AUTO_FAN_PIN -1
-#define E1_AUTO_FAN_PIN -1
+//#define E0_AUTO_FAN_PIN -1
+//#define E1_AUTO_FAN_PIN -1
 #define E2_AUTO_FAN_PIN -1
 #define E3_AUTO_FAN_PIN -1
 #define E4_AUTO_FAN_PIN -1
@@ -1015,13 +1015,13 @@
  */
 //#define HAVE_TMC2130
 #if ENABLED(HAVE_TMC2130)  // Choose your axes here. This is mandatory!
-  //#define X_IS_TMC2130
+  #define X_IS_TMC2130
   //#define X2_IS_TMC2130
-  //#define Y_IS_TMC2130
+  #define Y_IS_TMC2130
   //#define Y2_IS_TMC2130
-  //#define Z_IS_TMC2130
+  #define Z_IS_TMC2130
   //#define Z2_IS_TMC2130
-  //#define E0_IS_TMC2130
+  #define E0_IS_TMC2130
   //#define E1_IS_TMC2130
   //#define E2_IS_TMC2130
   //#define E3_IS_TMC2130
@@ -1133,7 +1133,7 @@
    * STEALTHCHOP needs to be enabled.
    * M913 X/Y/Z/E to live tune the setting
    */
-  //#define HYBRID_THRESHOLD
+  #define HYBRID_THRESHOLD
 
   #define X_HYBRID_THRESHOLD     100  // [mm/s]
   #define X2_HYBRID_THRESHOLD    100
